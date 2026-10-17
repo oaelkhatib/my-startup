@@ -1,0 +1,35 @@
+/* Card grid: flexbox container that wraps onto new lines */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Single card: image on the left, title filling the rest */
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  flex-basis: 250px;
+  flex-grow: 1;
+  margin: 10px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+  width: 150px;
+}
+
+.card h3 {
+  flex-grow: 1;
+  margin: 0 0 0 20px;
+  font-size: 20px;
+}

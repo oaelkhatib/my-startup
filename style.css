@@ -1,0 +1,67 @@
+/* ---------- Google Fonts ---------- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&family=Inter:wght@400;600&display=swap");
+
+/* ---------- Font Awesome icons (footer) ---------- */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+
+/* ---------- UI kit components ---------- */
+@import url("components/avatar.css");
+@import url("components/banner.css");
+@import url("components/button.css");
+@import url("components/card.css");
+@import url("components/container.css");
+@import url("components/footer.css");
+@import url("components/navbar.css");
+@import url("components/signup.css");
+
+/* ---------- Brand variables ---------- */
+:root {
+  --brand: #e4572e;        /* coral: primary buttons, accents */
+  --brand-dark: #c2401b;   /* hover state */
+  --ink: #1d2a44;          /* navy: headings */
+  --text: #4a4f57;         /* body text */
+  --bg-light: #f6f4f1;     /* section background */
+}
+
+/* ---------- Base ---------- */
+* {
+  box-sizing: border-box; /* padding counts inside an element's width */
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  color: var(--ink);
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth; /* "Get early access" glides down to the form */
+}
+
+/* ---------- Layout ---------- */
+.section {
+  background: var(--bg-light);
+  padding: 80px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  margin: 0 0 8px;
+}
+
+.section-subtitle {
+  text-align: center;
+  margin: 0 0 48px;
+}
